@@ -27,9 +27,6 @@ body{
   color: rgb(75, 75, 75);
   max-height: 0px;
   overflow: hidden;
-  transition: max-height 0.2s linear;
+  transition: max-height 0.2s ;
 }
 
-.answer.active{
-  max-height: 300px;
-}
