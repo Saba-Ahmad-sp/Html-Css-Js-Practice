@@ -9,6 +9,7 @@ body{
   margin-bottom: 16px;
   border-radius: 6px;
   box-shadow: 1.5px 1.5px 4px slategray;
+  cursor: pointer;
 }
 .question{
   display: flex;
@@ -18,7 +19,15 @@ body{
 .icon{
   margin-right: 16px;
 }
+.icon.active{
+  transform: rotate(-180deg);
+}
 .answer{
   color: rgb(75, 75, 75);
+  max-height: 0px;
+  overflow: hidden;
+}
 
+.answer.active{
+  max-height: fit-content;
 }
