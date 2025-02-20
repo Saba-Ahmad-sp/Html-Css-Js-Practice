@@ -1,0 +1,24 @@
+body{
+  padding: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6rem;
+}
+.accordian{
+  background-color: slategray;
+  padding: 4px 16px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  box-shadow: 1.5px 1.5px 4px slategray;
+}
+.question{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon{
+  margin-right: 16px;
+}
+.answer{
+  color: rgb(75, 75, 75);
+
+}
