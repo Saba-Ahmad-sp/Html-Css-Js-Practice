@@ -18,6 +18,7 @@ body{
 }
 .icon{
   margin-right: 16px;
+  transition: transform 0.2s;
 }
 .icon.active{
   transform: rotate(-180deg);
@@ -26,8 +27,9 @@ body{
   color: rgb(75, 75, 75);
   max-height: 0px;
   overflow: hidden;
+  transition: max-height 0.2s linear;
 }
 
 .answer.active{
-  max-height: fit-content;
+  max-height: 300px;
 }
