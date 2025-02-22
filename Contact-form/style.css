@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 100vw;
+  height: 100vh;
+}
+.details{
+  display: flex;
+  flex-direction: column;
+  max-width: 12rem;
+  background-color: aqua;
+  margin-left: 5%;
+  margin-top: 30vh;
+  height: 20rem;
+  align-items: center;
+}
+.details>form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form-element{
+  border-radius: 15px;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid black;
+}
