@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <title>Contact Form</title>
-</head>
-<body>
-  <div class="container">
-    <div class="details">
-      <h1>Get in touch</h1>
-      <form action="#">
-        <label for="full-name">
-          <input type="text" id="full-name" name="full-name" placeholder="Saba Ahmad" class="form-element">
-        </label>
-        <label for="email">
-          <input type="email" id="email" name="email" placeholder="someone@gmail.com" class="form-element">
-        </label>
-        <label for="text">
-          <textarea name="text" id="text" placeholder="Share your Thoughts!" class="form-element" ></textarea>
-        </label>
-      </form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <div class="container">
+        <form action="#" class="contact-left">
+          <div class="contact-left-heading">
+            <h2>Get in touch</h2>
+            <hr>
+          </div>
+          <input
+            type="text"
+            id="full-name"
+            name="full-name"
+            placeholder="Saba Ahmad"
+            class="form-element"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="someone@gmail.com"
+            class="form-element"
+            required
+          />
+          <textarea
+            name="text"
+            id="text"
+            placeholder="Share your Thoughts!"
+            class="form-element"
+            required
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      <div class="right-img">
+        <img src="./assets/contact-us-illustration-download-in-svg-png-gif-file-formats--customer-support-service-representative-call-pack-business-illustrations-5059493.webp" alt="" />
+      </div>
     </div>
-    <div class="img">
-      <img src="" alt="">
-    </div>
-  </div>
-  <script src="./script.js"></script>
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
