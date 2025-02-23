@@ -8,11 +8,12 @@
   </head>
   <body>
     <div class="container">
-        <form action="#" class="contact-left">
+        <form id="form" action="https://api.web3forms.com/submit" method="POST" class="contact-left">
           <div class="contact-left-heading">
             <h2>Get in touch</h2>
             <hr>
           </div>
+          <input type="hidden" name="access_key" value="7a1b68c5-3320-4144-b395-04f8e73fc9a0">
           <input
             type="text"
             id="full-name"
@@ -39,7 +40,7 @@
           <div class="button">
             <button class="btn" type="submit">Submit</button>
           </div>
-          
+          <div id="result"></div>
         </form>
       <div class="right-img">
         <img src="./assets/contact-us-illustration-download-in-svg-png-gif-file-formats--customer-support-service-representative-call-pack-business-illustrations-5059493.webp" alt="" />
