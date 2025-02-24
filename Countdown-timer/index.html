@@ -1,14 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <title>Countdown Timer</title>
-</head>
-<body>
-  
-  
-  <script src="./scripts.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Countdown Timer</title>
+  </head>
+  <body>
+    <div class="container">
+      <span class="title"> Countdown Timer </span>
+
+      <div class="container-labels">
+        <p class="label">Hours</p>
+        <p class="label">Minutes</p>
+        <p class="label">Seconds</p>
+      </div>
+
+      <div class="container-inputs">
+        <input
+          type="number"
+          maxlength="2"
+          oninput="this.value=this.value.slice(0, this.maxLength)"
+          class="input-time hour"
+          placeholder="00"
+        />
+        <p class="colon"></p>
+        <input
+          type="number"
+          maxlength="2"
+          oninput="this.value=this.value.slice(0, this.maxLength)"
+          class="input-time min"
+          placeholder="00"
+        />
+        <p class="colon"></p>
+        <input
+          type="number"
+          maxlength="2"
+          oninput="this.value=this.value.slice(0, this.maxLength)"
+          class="input-time sec"
+          placeholder="00"
+        />
+      </div>
+      <div class="container-btns">
+        <div class="btn start">Start</div>
+        <div class="btn stop">Stop</div>
+        <div class="btn reset">Reset</div>
+      </div>
+    </div>
+    <script src="./scripts.js"></script>
+  </body>
 </html>
