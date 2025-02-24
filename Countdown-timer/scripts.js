@@ -9,7 +9,7 @@
 
   let countdownTimer = null;
 
-  startBtn.addEventListener("click", function() {
+  startBtn.addEventListener("click", () => {
     if(hour.value == 0 && min.value == 0 && sec.value == 0) return;
     
     function startInterval() {
@@ -23,8 +23,12 @@
     startInterval()
   });
 
-  function stopInterval(){
+  function stopInterval(state){
+    startBtn.innerHTML = state === "pause"?"Continue":"Start";
 
+    startBtn.style.display = "initial";
+    stopBtn.style.display = "none";
+    clearInterval(countdownTimer);
   };
 
   function timer() {
@@ -36,7 +40,7 @@
       hour.value++;
       min.value = parseInt(min.value) - 60;
     }
-    if(hour == 0 && min == 0 && sec == 0){
+    if(hour.value == 0 && min.value == 0 && sec.value == 0){
       hour.value = "";
       min.value = "";
       sec.value = "";
@@ -51,5 +55,17 @@
       hour.value = `${hour.value <= 10?"0":""}${hour.value - 1}`
     }
   };
+
+  stopBtn.addEventListener("click", () => {
+    stopInterval("pause")
+  });
+
+  resetBtn.addEventListener("click", () => {
+    hour.value = "";
+    min.value = "";
+    sec.value = "";
+
+    stopInterval()
+  });
 
 })();
